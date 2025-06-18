@@ -3,11 +3,13 @@ using namespace std;
 
 void Pattern5(int N)
 {
-    for (int i = 1; i <= N; i++)
+    for (int i = 0; i < N; i++)
     {
-        for (int j = i; j <= N; j++)
+        // We want N value to everytime decrease to -1
+        // Within inner loop
+        for (int j = 1; j <= N - i; j++)
         {
-            cout << i << " ";
+            cout << j << " ";
         }
         cout << endl;
     }
