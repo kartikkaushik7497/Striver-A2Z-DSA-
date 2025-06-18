@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void Pattern3(int N)
+void Pattern4(int N)
 {
     for (int i = 1; i <= N; i++)
     {
@@ -15,6 +15,6 @@ void Pattern3(int N)
 
 int main()
 {
-    Pattern3(5);
+    Pattern4(5);
     return 0;
 }
