@@ -17,6 +17,7 @@ int *PrintDivisors_brute(int N, int &size)
     return divisors;
 }
 
+// gives Unsorted array of divisors
 void *PrintDivisors_optimal(int N)
 {
     for (int i = 1; i <= sqrt(N); i++)
@@ -24,10 +25,10 @@ void *PrintDivisors_optimal(int N)
         if (N % i == 0)
         {
             cout << i << " ";
-        }
-        if (N % i != i)
-        {
-            cout << N / i << " ";
+            if (N / i != i)
+            {
+                cout << N / i << " ";
+            }
         }
     }
 }
@@ -41,6 +42,6 @@ int main()
     {
         cout << divisors[i] << " ";
     }
-    // PrintDivisors_optimal(N, size);
+    // PrintDivisors_optimal(N);
     return 0;
 }
