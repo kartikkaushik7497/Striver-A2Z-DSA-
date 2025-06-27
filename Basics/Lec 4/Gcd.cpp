@@ -59,7 +59,7 @@ int Gcd_Optimal(int a, int b)
     else
         return a;
 }
-// TC = O(log∲min(a,b)) not a not b "∲" because the the times of division is changing
+// TC = O(log∲min(a,b)) not a not b but -> "∲" because the the times of division is changing
 // sometimes a and b so "∲" varies
 
 int main()
