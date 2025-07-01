@@ -6,7 +6,6 @@ void nNumberSum(int n, int sum)
     if (n < 1)
     {
         cout << sum;
-        cout << endl;
         return;
     }
 
